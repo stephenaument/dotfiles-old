@@ -1,0 +1,17 @@
+[user]
+	name = Stephen Aument
+	email = step@stephenaument.com
+[alias]
+	unadd = reset HEAD
+	unstage = reset HEAD --
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+[core]
+	editor = subl -w
+[github]
+	user = stephenaument
+[heroku]
+	account = work
