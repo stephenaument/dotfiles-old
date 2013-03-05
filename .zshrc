@@ -32,6 +32,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/usr/
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-export EDITOR='subl -w'
+# export EDITOR='subl -w'
+export EDITOR='vim'
 
 alias rspec='rspec --color'

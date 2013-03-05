@@ -9,9 +9,12 @@
 	ci = commit
 	st = status
 	last = log -1 HEAD
+  c = config --global color.ui true
 [core]
-	editor = subl -w
+	editor = vim
 [github]
 	user = stephenaument
 [heroku]
 	account = work
+[color]
+	ui = true
