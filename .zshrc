@@ -28,7 +28,7 @@ plugins=(rails3 git github)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/saument/.rvm/gems/ruby-1.9.2-p290@rails/bin:/Users/saument/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/saument/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/saument/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/python:/usr/local/pgsql/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/saument/ec2-api-tools-1.3-30349/bin:/Developer/usr/bin
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/home/saument/.rvm/gems/ruby-1.9.2-p290@rails/bin:/home/saument/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/saument/.rvm/rubies/ruby-1.9.2-p290/bin:/home/saument/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/python:/usr/local/pgsql/bin:/usr/local/sbin:/usr/local/mysql/bin:/home/saument/ec2-api-tools-1.3-30349/bin:/Developer/usr/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -36,3 +36,5 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/usr/
 export EDITOR='vim'
 
 alias rspec='rspec --color'
+
+echo "Done loading zsh."
