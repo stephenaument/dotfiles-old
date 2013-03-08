@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="wedisagree"
+ZSH_THEME="step-server"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -28,7 +28,7 @@ plugins=(rails3 git github)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/saument/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/saument/.rvm/gems/ruby-1.9.2-p290@rails/bin:/Users/saument/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/saument/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/saument/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/python:/usr/local/pgsql/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/saument/ec2-api-tools-1.3-30349/bin:/Developer/usr/bin
+export PATH=/$HOME/bin:/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin:/$HOME/.rvm/gems/ruby-1.9.2-p290@rails/bin:/$HOME/.rvm/gems/ruby-1.9.2-p290@global/bin:/$HOME/.rvm/rubies/ruby-1.9.2-p290/bin:/$HOME/.rvm/bin:/usr/local/share/python:/usr/local/pgsql/bin:/usr/local/mysql/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -36,10 +36,11 @@ export PATH=/Users/saument/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/us
 export EDITOR='vim'
 
 alias rspec='rspec --color'
+alias s3ls='s3ls --no-vhost'
+alias s3put='s3put --no-vhost'
+alias s3get='s3get --no-vhost'
 
 echo "Done loading zsh."
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Bind the up and down arrows to auto complete history
 # bindkey '^[OA' history-beginning-search-backward
