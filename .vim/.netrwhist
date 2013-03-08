@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/saument/projects/iprotest.org/propertytaxes'
+let g:netrw_dirhist_2='/home/saument/projects/iprotest.org/propertytaxes/spec'
+let g:netrw_dirhist_3='/home/saument/projects/iprotest.org/propertytaxes/spec/models'
