@@ -12,6 +12,8 @@
 .rvm/
 .ssh/
 .viminfo
+.vim/netrwhist
+.vim/doc/tags
 .zcompdump
 .zsh-update
 .zsh_history
