@@ -25,6 +25,25 @@ augroup vimrc
   autocmd GuiEnter * set columns=120 lines=70 number
 augroup END
 
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" vim tab navigation
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tl :tablast<CR>
+nnoremap tc :tabclose<CR>
+nnoremap tn :tabnew<CR>
+
+" format JSON
+nnoremap <leader>j :%!python -m json.tool<cr>
+" " save with enter
+nmap <CR> :write!<CR>
+cabbrev w nope
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
