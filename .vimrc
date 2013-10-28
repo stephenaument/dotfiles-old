@@ -51,6 +51,10 @@ cabbrev w nope
 " ignore ruby warnings in Syntastic
 let g:syntastic_ruby_mri_args="-T1 -c"
 
+" syntax highlighting for .ejs and .hamlc
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.hamlc set filetype=html
+
 " Better search behavior
 set hlsearch
 set incsearch
