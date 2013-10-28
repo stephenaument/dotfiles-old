@@ -64,6 +64,9 @@ set smartcase
 " Unhighlight search results
 map <Leader><space> :nohl<cr>
 
+" Don't scroll off the edge of the page
+set scrolloff=5
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
