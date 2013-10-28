@@ -45,7 +45,7 @@ nnoremap tn :tabnew<CR>
 nnoremap <leader>j :%!python -m json.tool<cr>
 " " save with enter
 nmap <CR> :write!<CR>
-cabbrev w nope
+"cabbrev w nope
 
 
 " ignore ruby warnings in Syntastic
