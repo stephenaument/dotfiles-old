@@ -50,6 +50,16 @@ cabbrev w nope
 
 " ignore ruby warnings in Syntastic
 let g:syntastic_ruby_mri_args="-T1 -c"
+
+" Better search behavior
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Unhighlight search results
+map <Leader><space> :nohl<cr>
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
