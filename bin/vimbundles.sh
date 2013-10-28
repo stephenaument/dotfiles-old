@@ -62,5 +62,6 @@ get_bundle heartsentwined vim-emblem
 get_bundle tpope vim-dispatch
 get_bundle milkypostman vim-togglelist
 get_bundle christoomey vim-tmux-navigator
+get_bundle scrooloose syntastic
 
 vim -c 'call pathogen#helptags()|q'

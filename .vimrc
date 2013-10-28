@@ -44,6 +44,9 @@ nnoremap <leader>j :%!python -m json.tool<cr>
 nmap <CR> :write!<CR>
 cabbrev w nope
 
+
+" ignore ruby warnings in Syntastic
+let g:syntastic_ruby_mri_args="-T1 -c"
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
