@@ -25,6 +25,9 @@ augroup vimrc
   autocmd GuiEnter * set columns=120 lines=70 number
 augroup END
 
+" Add comma as leader
+:nmap , \
+
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -43,6 +46,26 @@ nnoremap <leader>j :%!python -m json.tool<cr>
 " " save with enter
 nmap <CR> :write!<CR>
 cabbrev w nope
+
+
+" ignore ruby warnings in Syntastic
+let g:syntastic_ruby_mri_args="-T1 -c"
+
+" syntax highlighting for .ejs and .hamlc
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.hamlc set filetype=html
+
+" Better search behavior
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Unhighlight search results
+map <Leader><space> :nohl<cr>
+
+" Don't scroll off the edge of the page
+set scrolloff=5
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
