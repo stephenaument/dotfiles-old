@@ -24,7 +24,7 @@ Install
 
 Start by cloning down the repo:
 
-	$ git clone https://github.com/hashrocket/dotmatrix.git
+	$ git clone https://github.com/healthagentech/dotmatrix.git
 
 Then run this script:
 
