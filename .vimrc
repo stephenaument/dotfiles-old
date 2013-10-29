@@ -70,6 +70,9 @@ set scrolloff=5
 " This uses Ack.vim to search for the word under the cursor
 nnoremap <leader><bs> :Ack '\b<c-r><c-w>\b'<cr>
 
+" keep foreground commands in sync
+map fg <c-z>
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
