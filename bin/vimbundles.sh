@@ -64,5 +64,6 @@ get_bundle milkypostman vim-togglelist
 get_bundle christoomey vim-tmux-navigator
 get_bundle scrooloose syntastic
 get_bundle vim-scripts IndexedSearch
+get_bundle goldfeld vim-seek
 
 vim -c 'call pathogen#helptags()|q'
