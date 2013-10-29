@@ -73,6 +73,10 @@ nnoremap <leader><bs> :Ack '\b<c-r><c-w>\b'<cr>
 " keep foreground commands in sync
 map fg <c-z>
 
+" QuickFix navigation
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
