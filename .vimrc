@@ -43,10 +43,10 @@ nnoremap tn :tabnew<CR>
 
 " format JSON
 nnoremap <leader>j :%!python -m json.tool<cr>
-" " save with enter
+
+" save with enter
 nmap <CR> :write!<CR>
 "cabbrev w nope
-
 
 " ignore ruby warnings in Syntastic
 let g:syntastic_ruby_mri_args="-T1 -c"
@@ -66,6 +66,16 @@ map <Leader><space> :nohl<cr>
 
 " Don't scroll off the edge of the page
 set scrolloff=5
+
+" This uses Ack.vim to search for the word under the cursor
+nnoremap <leader><bs> :Ack '\b<c-r><c-w>\b'<cr>
+
+" keep foreground commands in sync
+map fg <c-z>
+
+" QuickFix navigation
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
