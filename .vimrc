@@ -41,6 +41,16 @@ nnoremap tl :tablast<CR>
 nnoremap tc :tabclose<CR>
 nnoremap tn :tabnew<CR>
 
+" disable arrow navigation keys
+inoremap  <Up>    <NOP>
+inoremap  <Down>  <NOP>
+inoremap  <Left>  <NOP>
+inoremap  <Right> <NOP>
+noremap   <Up>    <NOP>
+noremap   <Down>  <NOP>
+noremap   <Left>  <NOP>
+noremap   <Right> <NOP>
+
 " format JSON
 nnoremap <leader>j :%!python -m json.tool<cr>
 
