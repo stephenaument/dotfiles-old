@@ -24,7 +24,7 @@ Install
 
 Start by cloning down the repo:
 
-	$ git clone https://github.com/healthagentech/dotmatrix.git
+	$ git clone https://github.com/healthagentech/dotfiles.git
 
 Then run this script:
 
@@ -40,17 +40,17 @@ Partial Installation
 --------------------
 
 Sometimes it's useful to only install part of dotmatrix. For partial
-installation, you can create a `FILES` file in the root of dotmatrix that
+installation, you can create a `FILES` file in the root of dotfiles that
 contains a newline-delimited list of dotfiles to symlink and keep up to date
-with dotmatrix.
+with dotfiles.
 
-When `FILES` exists in the dotmatrix source directory, running `bin/install`
+When `FILES` exists in the dotfiles source directory, running `bin/install`
 will only symlink the dotfiles listed within `FILES`.
 
 If, for example, you only want the tmux configuaration and hashrc files, and
 want to ignore all of the rest of dotmatrix's dotfiles:
 
-    $ cd path/to/dotmatrix
+    $ cd path/to/dotfiles
     $ cat FILES
     .tmux.conf
     .hashrc
@@ -76,6 +76,6 @@ their tools easy and fun to use.
 Update
 ------
 
-Keeping your dotmatrix up-to-date is easy. Just visit the dotmatrix directory
+Keeping your dotfiles up-to-date is easy. Just visit the dotfiles directory
 and run `bin/upgrade`. This will fetch the latest changes from GitHub and
 symlink any new files.
