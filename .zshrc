@@ -42,8 +42,6 @@ alias s3get='s3get --no-vhost'
 
 alias glo='glgga --oneline'
 
-echo "Done loading zsh."
-
 # Bind the up and down arrows to auto complete history
 # bindkey '^[OA' history-beginning-search-backward
 # bindkey '^[OB' history-beginning-search-forward

@@ -12,6 +12,8 @@
 .rvm/
 .ssh/
 .viminfo
+.vim/netrwhist
+.vim/doc/tags
 .zcompdump
 .zsh-update
 .zsh_history
@@ -20,6 +22,17 @@ projects/
 properties.bson
 src/
 tmp
+
+.ievms/
+.sync.db-journal
+.vim/.VimballRecord
+.vim/doc/command-t.txt
+.vim/plugin/
+.vim/ruby/
+.xwmmidnrc
+.zcompdump-Step's MBP-4.3.11
+bin/
+sicp.rkt
 
  - Conflict*
 -
