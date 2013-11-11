@@ -40,6 +40,8 @@ alias s3ls='s3ls --no-vhost'
 alias s3put='s3put --no-vhost'
 alias s3get='s3get --no-vhost'
 
+alias glo='glgga --oneline'
+
 echo "Done loading zsh."
 
 # Bind the up and down arrows to auto complete history
@@ -50,6 +52,10 @@ bindkey '^[OB' down-line-or-search
 
 # Check to see if SSH Agent is already running
 agent_pid="$(ps -ef | grep "ssh-agent" | grep -v "grep" | awk '{print($2)}')"
+
+
+#Set up the gmail settings for rails to use in development
+source ~/.gmail
   
 # If the agent is not running (pid is zero length string)
 if [[ -z "$agent_pid" ]]; then
@@ -82,3 +88,6 @@ else
   echo "Agent sock $agent_sock"
   export SSH_AUTH_SOCK="$agent_sock"
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
