@@ -51,6 +51,9 @@ noremap   <Down>  <NOP>
 noremap   <Left>  <NOP>
 noremap   <Right> <NOP>
 
+" show line numbers
+set number
+
 " format JSON
 nnoremap <leader>j :%!python -m json.tool<cr>
 
