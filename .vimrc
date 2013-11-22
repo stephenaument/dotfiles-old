@@ -90,6 +90,10 @@ map fg <c-z>
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
+" Use binstubs for rspec and cucumber
+let g:turbux_command_cucumber="bin/cucumber -rfeatures"
+let g:turbux_command_rspec="bin/rspec"
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
