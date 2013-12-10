@@ -69,5 +69,7 @@ get_bundle kana vim-textobj-user
 get_bundle nelstrom vim-textobj-rubyblock
 get_bundle Rykka lastbuf.vim
 get_bundle altercation vim-colors-solarized
+get_bundle kien ctrlp.vim
+get_bundle scrooloose nerdtree
 
 vim -c 'call pathogen#helptags()|q'
