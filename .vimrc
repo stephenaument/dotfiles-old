@@ -89,9 +89,18 @@ nnoremap <leader><bs> :Ack '\b<c-r><c-w>\b'<cr>
 " keep foreground commands in sync
 map fg <c-z>
 
-" QuickFix navigation
-map <C-n> :cn<CR>
-map <C-p> :cp<CR>
+" ctrlp.vim config
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_max_height = 20
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_switch_buffer = 0
+
+" NERDTree configuration
+let NERDTreeIgnore=['\~$', 'tmp', '\.git']
+let NERDTreeShowHidden=1
+map <Leader>n :NERDTreeToggle<CR>
+map <Leader>fnt :NERDTreeFind<CR>
 
 " Use binstubs for rspec and cucumber
 let g:turbux_command_cucumber="bin/cucumber -rfeatures"
