@@ -71,5 +71,6 @@ get_bundle Rykka lastbuf.vim
 get_bundle altercation vim-colors-solarized
 get_bundle kien ctrlp.vim
 get_bundle scrooloose nerdtree
+get_bundle rking ag.vim
 
 vim -c 'call pathogen#helptags()|q'
