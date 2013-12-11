@@ -100,6 +100,10 @@ alias rd='rmdir'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias groutes='rake routes | grep $@'
+alias tml='tmux ls'
+alias tmn='tmux new -s'
+alias tma='tmux attach -t'
+
 
 # set cd autocompletion to commonly visited directories
 cdpath=(~ ~/src $DEV_DIR $HASHROCKET_DIR)
