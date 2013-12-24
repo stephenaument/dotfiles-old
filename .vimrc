@@ -57,10 +57,6 @@ set number
 " format JSON
 nnoremap <leader>j :%!python -m json.tool<cr>
 
-" save with enter
-nmap <CR> :write!<CR>
-"cabbrev w nope
-
 " ignore ruby warnings in Syntastic
 let g:syntastic_ruby_mri_args="-T1 -c"
 
