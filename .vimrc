@@ -93,7 +93,7 @@ let g:ctrlp_match_window_bottom = 0
 let g:ctrlp_switch_buffer = 0
 
 " NERDTree configuration
-let NERDTreeIgnore=['\~$', 'tmp', '\.git']
+let NERDTreeIgnore=['\~$', 'tmp', '\.git', '\.bundle', '.DS_Store', 'tags', '.swp']
 let NERDTreeShowHidden=1
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>fnt :NERDTreeFind<CR>
