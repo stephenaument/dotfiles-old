@@ -57,7 +57,6 @@ get_bundle jgdavey vim-turbux
 get_bundle jgdavey vim-weefactor
 get_bundle gregsexton gitv
 get_bundle rondale-sc vim-spacejam
-get_bundle elixir-lang vim-elixir
 get_bundle heartsentwined vim-emblem
 get_bundle tpope vim-dispatch
 get_bundle milkypostman vim-togglelist
