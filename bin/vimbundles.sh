@@ -14,7 +14,6 @@ get_bundle() {
   )
 }
 
-get_bundle adamlowe vim-slurper
 get_bundle AndrewRadev splitjoin.vim
 get_bundle duff vim-bufonly
 get_bundle ervandew supertab
