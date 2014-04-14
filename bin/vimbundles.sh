@@ -71,5 +71,6 @@ get_bundle kien ctrlp.vim
 get_bundle scrooloose nerdtree
 get_bundle rking ag.vim
 get_bundle bling vim-airline
+get_bundle mustache vim-mustache-handlebars
 
 vim -c 'call pathogen#helptags()|q'
