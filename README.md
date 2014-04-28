@@ -68,7 +68,7 @@ This will install the set of Vim bundles we use.
 Actively Maintained
 -------------------
 
-At Hashrocket we use dotmatrix on all of our development machines, then for
+At WellMatch we use dotmatrix on all of our development machines, then for
 many of us we get so used to the setup that we use it on our personal machines
 too. That means there's a lot of picky nerds using dotmatrix every day to make
 their tools easy and fun to use.
