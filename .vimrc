@@ -106,6 +106,8 @@ if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
-if filereadable(expand('.vimrc'))
-  source .vimrc
+if getcwd() != $HOME
+  if filereadable(expand('.vimrc'))
+    source .vimrc
+  endif
 endif
