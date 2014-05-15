@@ -4,3 +4,6 @@ tags
 coverage
 cassettes
 fonts
+generated
+node_modules
+vendor
