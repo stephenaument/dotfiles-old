@@ -121,3 +121,8 @@ function! QuickfixFilenames()
   endfor
   return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
 endfunction
+
+" Put swap files in tmp instead of by the current file, otherwise watchers like
+" guard / ember-cli will trigger file builds when you are typing
+set backupdir=./.backup,.,/tmp
+set directory=.,./.backup,/tmp
