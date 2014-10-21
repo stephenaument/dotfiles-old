@@ -122,7 +122,9 @@ function! QuickfixFilenames()
   return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
 endfunction
 
-" Put swap files in tmp instead of by the current file, otherwise watchers like
-" guard / ember-cli will trigger file builds when you are typing
-set backupdir=./.backup,.,/tmp
-set directory=.,./.backup,/tmp
+" Disable vim backups
+set nobackup
+
+" Store swap files named by their path in common directory to reduce git noise
+" and avoid false starts by test suite file watchers
+set directory=~/.vim/.swp//
