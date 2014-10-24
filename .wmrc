@@ -4,6 +4,9 @@
 [ -e "$WELLMATCH_DIR" ] || WELLMATCH_DIR="$HOME/wmdev"
 export WELLMATCH_DIR
 
+[ -e "$DOTFILES_DIR" ] || DOTFILES_DIR="$(pwd -P ~/.vimrc)"
+export DOTFILES_DIR
+
 # Paths for prepending
 for dir in /usr/local/bin "$HOME/bin" .git/bin .git/safe/../../bin; do
   case "$PATH:" in
