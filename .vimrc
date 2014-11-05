@@ -102,6 +102,8 @@ map <Leader>fnt :NERDTreeFind<CR>
 let g:turbux_command_cucumber="bin/cucumber -rfeatures"
 let g:turbux_command_rspec="bin/rspec"
 
+set softtabstop=2 shiftwidth=2 expandtab
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
