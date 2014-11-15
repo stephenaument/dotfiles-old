@@ -1,7 +1,4 @@
 runtime! autoload/pathogen.vim
-if exists('g:loaded_pathogen')
-  execute pathogen#infect('~/.vimbundles/{}')
-endif
 
 syntax on
 filetype plugin indent on
@@ -104,6 +101,20 @@ let g:turbux_command_rspec="bin/rspec"
 
 set softtabstop=2 shiftwidth=2 expandtab
 
+if getcwd() != $HOME && getcwd() != $DOTFILES_DIR
+  if filereadable(expand('.vimbundle'))
+    let g:pathogen_disabled = []
+    let installed_plugins= split(system("ls -1 ~/.vimbundles/ | awk -F'/' '{print $NF}'"), '\n')
+    let project_plugins= split(system("cat '.vimbundle' | awk -F'/' '{print $NF}'"), '\n')
+    " reconcile the differences and disable those not contained in the project
+    for plugin in installed_plugins
+      if index(project_plugins, plugin) == -1
+        call add(g:pathogen_disabled, plugin)
+      endif
+    endfor
+  endif
+endif
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
@@ -124,6 +135,10 @@ function! s:Repl()
   return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Repl()
+
+if exists('g:loaded_pathogen')
+  execute pathogen#infect('~/.vimbundles/{}')
+endif
 
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 function! QuickfixFilenames()
