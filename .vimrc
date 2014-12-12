@@ -138,6 +138,5 @@ endfunction
 " Disable vim backups
 set nobackup
 
-" Store swap files named by their path in common directory to reduce git noise
-" and avoid false starts by test suite file watchers
-set directory=~/.vim/.swp//
+" Disable swapfile
+set noswapfile
