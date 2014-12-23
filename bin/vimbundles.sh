@@ -23,7 +23,10 @@ install_plugin() {
   fi
 }
 
+DIR=$(pwd)
+cd $HOME
 vim -c 'call pathogen#helptags()|q'
+cd $DIR
 
 merged_bundles=("${default_bundles[@]}" "${project_bundles[@]}")
 
