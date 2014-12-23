@@ -4,7 +4,8 @@
 [ -e "$WELLMATCH_DIR" ] || WELLMATCH_DIR="$HOME/wmdev"
 export WELLMATCH_DIR
 
-[ -e "$DOTFILES_DIR" ] || DOTFILES_DIR="$(pwd -P ~/.vimrc)"
+VIMRC_PATH="$(readlink ~/.vimrc)"
+[ -e "$DOTFILES_DIR" ] || DOTFILES_DIR="$(dirname $VIMRC_PATH)"
 export DOTFILES_DIR
 
 # Paths for prepending
