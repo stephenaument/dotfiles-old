@@ -108,6 +108,8 @@ if getcwd() != $HOME && getcwd() != $DOTFILES_DIR
   endif
 endif
 
+colorscheme Tomorrow-Night-Eighties
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
