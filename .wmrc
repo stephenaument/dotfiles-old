@@ -191,6 +191,9 @@ alias gra='git rebase --abort'
 alias reset-authors='git commit --amend --reset-author -C HEAD'
 alias vi='vim'
 alias be='bundle exec'
+alias ap='ansible-playbook'
+alias ag='ansible-galaxy'
+alias av='ansible-vault'
 
 if [ "$(uname)" = Darwin -a "$(command -v vim)" = /usr/bin/vim ]; then
   bettervim="/Applications/MacVim.app/Contents/MacOS/Vim"
