@@ -200,3 +200,5 @@ if [ "$(uname)" = Darwin -a "$(command -v vim)" = /usr/bin/vim ]; then
   [ -f "$bettervim" ] && alias vim="$bettervim"
   [ -f "$HOME$bettervim" ] && alias vim="$HOME$bettervim"
 fi
+
+source "$DOTFILES_DIR/wmenv.sh"
