@@ -249,10 +249,13 @@ Usage: wmenv <command> [<args>]
 Available wmenv commands are:
   info                    Show the current environment and its origin
   global [ENVIRONMENT]    Set or show the global environment
-  local [ENVIRONMENT]     Set or show the local project-specific environment
+  local [ENVIRONMENT]     Set or show the current directory-specific environment
   shell [ENVIRONENT]      Set or show the current shell-specific enviroment
   revert                  Unsets the current environment specification
   [ENVIRONMENT]           Shortcut for "wmenv shell [ENVIRONMENT]"
+
+<command> defaults to "info"
+
 EOF
 }
 
