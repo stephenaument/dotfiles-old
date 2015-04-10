@@ -9,6 +9,8 @@ tinkering with our favorite tools to get them to behave just right. We think
 using dotmatrix makes working with these tools more pleasant and hope you will
 too!
 
+Looking for **wmenv** documentation? See [WMENV.md](WMENV.md).
+
 What are dotfiles?
 ------------------
 
