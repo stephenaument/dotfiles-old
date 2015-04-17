@@ -5,6 +5,7 @@ fpath=(
   /usr/local/share/zsh/site-functions
 )
 
+source "$HOME/.aliases"
 source "$HOME/.wmrc"
 
 # color term
@@ -91,18 +92,8 @@ alias mv='nocorrect mv'       # no spelling correction on mv
 alias cp='nocorrect cp'
 alias mkdir='nocorrect mkdir'
 alias rspec='nocorrect rspec'
-alias ll="ls -l"
-alias la="ls -a"
 alias l.='ls -ld .[^.]*'
 alias lsd='ls -ld *(-/DN)'
-alias md='mkdir -p'
-alias rd='rmdir'
-alias cd..='cd ..'
-alias ..='cd ..'
-alias groutes='rake routes | grep $@'
-alias tml='tmux ls'
-alias tmn='tmux new -s'
-alias tma='tmux attach -t'
 
 
 # set cd autocompletion to commonly visited directories
