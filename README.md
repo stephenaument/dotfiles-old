@@ -80,6 +80,10 @@ following format:
 
 You need not include a trailing `.git`.
 
+In addition, our Dotfiles support the ability to limit plugins for a given project.  Simply place a `.vimbundle` file in the project root, containing a whitelist of the plugins that should be loaded. This gives us the flexibility to have specific global, personal and project-specific plugin configurations that match the behavior of the `.vimrc` file. This gives us the ability to experiment with new plugins easily, as well as to triage potential issues by limiting what is loaded.
+
+Project `.vimbundle`s are also consulted when installing/updating plugins -- as long as they are within the `$WELLMATCH_DIR`. This directory can, of course, be overridden on your local machine should you choose to organize things differently.
+
 Actively Maintained
 -------------------
 
