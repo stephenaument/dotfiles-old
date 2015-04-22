@@ -88,9 +88,9 @@ let NERDTreeShowHidden=1
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>fnt :NERDTreeFind<CR>
 
-" Use binstubs for rspec and cucumber
-let g:turbux_command_cucumber="bin/cucumber -rfeatures"
-let g:turbux_command_rspec="bin/rspec"
+" Rspec and Cucumber container compatibility
+let g:turbux_command_rspec="RAILS_ENV=test bin/fig run worker bundle exec rspec"
+let g:turbux_command_cucumber="RAILS_ENV=test bin/fig run worker bundle exec cucumber"
 
 set softtabstop=2 shiftwidth=2 expandtab
 
