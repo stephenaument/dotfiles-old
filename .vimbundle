@@ -20,7 +20,6 @@ tpope/vim-unimpaired
 vim-scripts/bufkill.vim
 vim-scripts/bufexplorer.zip
 jgdavey/tslime.vim
-gregsexton/gitv
 rondale-sc/vim-spacejam
 tpope/vim-dispatch
 milkypostman/vim-togglelist
