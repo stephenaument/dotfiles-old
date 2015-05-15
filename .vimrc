@@ -61,9 +61,6 @@ let g:syntastic_ruby_mri_args="-T1 -c"
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.hamlc set filetype=html
 
-" git commit messages get 50/72 vertical bars
-autocmd BufNewFile,BufRead COMMIT_EDITMSG set colorcolumn=50,72
-
 " Better search behavior
 set hlsearch
 set incsearch
