@@ -13,6 +13,7 @@ alias tma='tmux attach -t'
 
 # Git
 alias gap='git add -p'
+alias ga='git add'
 alias gnap='git add -N . && git add -p'
 alias gb='git branch'
 alias gc='git commit -v'
