@@ -76,9 +76,6 @@ set scrolloff=5
 " This uses Ack.vim to search for the word under the cursor
 nnoremap <leader><bs> :Ag! '\b<c-r><c-w>\b'<cr>
 
-" keep foreground commands in sync
-map fg <c-z>
-
 " NERDTree configuration
 let NERDTreeIgnore=['\~$', 'tmp', '\.git', '\.bundle', '.DS_Store', 'tags', '.swp']
 let NERDTreeShowHidden=1
