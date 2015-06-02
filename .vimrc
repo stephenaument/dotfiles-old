@@ -51,6 +51,9 @@ noremap   <Right> <NOP>
 " show line numbers
 set number
 
+" Save with leader + w
+nnoremap <Leader>w :w<CR>
+
 " format JSON
 nnoremap <leader>j :%!python -m json.tool<cr>
 
