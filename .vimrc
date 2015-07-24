@@ -92,7 +92,7 @@ let g:turbux_command_cucumber="RAILS_ENV=test bin/fig run worker bundle exec cuc
 
 set softtabstop=2 shiftwidth=2 expandtab
 
-if getcwd() != $HOME && getcwd() != $DOTFILES_DIR
+if getcwd() != $HOME && getcwd() != $DOTFILES_DIR && getcwd() != expand("$HOME/src/dotfiles")
   if filereadable(expand('.vimbundle'))
     let g:pathogen_disabled = []
     let installed_plugins= split(system("ls -1 ~/.vimbundles/ | awk -F'/' '{print $NF}'"), '\n')
@@ -112,7 +112,7 @@ if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
-if getcwd() != $HOME && getcwd() != $DOTFILES_DIR
+if getcwd() != $HOME && getcwd() != $DOTFILES_DIR && getcwd() != expand("$HOME/src/dotfiles")
   if filereadable(expand('.vimrc'))
     source .vimrc
   endif
