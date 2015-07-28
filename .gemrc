@@ -6,4 +6,5 @@ gem: --no-ri --no-rdoc
 :verbose: true
 :sources:
 - https://rubygems.org
+- https://geminabox.wellmatchhealth.com/
 :backtrace: false
