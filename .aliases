@@ -1,10 +1,17 @@
 # Shell
+alias ls='ls --color'
 alias ll="ls -l"
 alias la="ls -a"
+alias lll="la -l"
 alias md='mkdir -p'
 alias rd='rmdir'
 alias cd..='cd ..'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias psg='ps aux | grep'
+alias h='history'
 
 # Tmux
 alias tml='tmux ls'
