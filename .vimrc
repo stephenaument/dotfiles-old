@@ -54,8 +54,8 @@ set number
 " Save with leader + w
 nnoremap <Leader>w :w<CR>
 
-" format JSON
-nnoremap <leader>j :%!python -m json.tool<cr>
+" format JSON with jq
+nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
 
 " ignore ruby warnings in Syntastic
 let g:syntastic_ruby_mri_args="-T1 -c"
