@@ -136,6 +136,16 @@ if exists('g:loaded_pathogen')
   execute pathogen#infect('~/.vimbundles/{}')
 endif
 
+" toggle quickfix with <Leader> c
+let g:toggle_list_no_mappings=1
+nmap <script> <silent> <Leader>c :call ToggleQuickfixList()<CR>
+
+" close windows with leader + q
+nnoremap <Leader>q :q<CR>
+
+" force close with leader + Q
+nnoremap <Leader>Q :q!<CR>
+
 " ctrlp.vim config
 if get(g:, 'loaded_ctrlp', 1)
   let g:ctrlp_match_window_reversed = 0
