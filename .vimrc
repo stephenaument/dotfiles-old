@@ -90,8 +90,8 @@ map <Leader>fnt :NERDTreeFind<CR>
 noremap <leader>bb :BufExplorer<CR>
 
 " split windows
-nnoremap <leader>- :spl<cr>
-nnoremap <leader><pipe> :vsp<cr>
+nnoremap <C-w>- :spl<cr>
+nnoremap <C-w><bar> :vsp<cr>
 
 " Rspec and Cucumber container compatibility
 let g:turbux_command_rspec="RAILS_ENV=test bin/fig run worker bundle exec rspec"
