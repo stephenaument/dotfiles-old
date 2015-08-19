@@ -99,6 +99,8 @@ alias lsd='ls -ld *(-/DN)'
 # set cd autocompletion to commonly visited directories
 cdpath=(~ ~/src $DEV_DIR $HASHROCKET_DIR)
 
+source ~/dotfiles/bin/tmuxinator.zsh
+
 # rvm-install added line:
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
