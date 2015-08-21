@@ -172,6 +172,7 @@ endfunction
 
 " Disable vim backups
 set nobackup
+set nowritebackup
 
 " Disable swapfile
 set noswapfile

@@ -184,9 +184,6 @@ command! -bang UnusedSteps call <SID>unused_steps("<bang>")
 augroup hashrocket
   autocmd!
 
-  autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *
-        \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif
-
   autocmd BufRead * if ! did_filetype() && getline(1)." ".getline(2).
         \ " ".getline(3) =~? '<\%(!DOCTYPE \)\=html\>' | setf html | endif
 
