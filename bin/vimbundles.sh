@@ -19,6 +19,7 @@ install_plugin() {
     cd "$BASE/$dir"
     git pull --rebase
   else
+    echo "Installing $1"
     git clone https://github.com/"$1".git
   fi
 }
@@ -28,10 +29,10 @@ cd $HOME
 vim -c 'call pathogen#helptags()|q'
 cd $DIR
 
-merged_bundles=("${default_bundles[@]}" "${project_bundles[@]}")
+merged_vimbundle_files=("${default_bundles[@]}" "${project_bundles[@]}")
 
-for bundle in ${merged_bundles[@]}; do
-  project_plugins=($(cat  $bundle |tr "\n" " "))
+for bundle in ${merged_vimbundle_files[@]}; do
+  project_plugins=$(cat $bundle)
   found_plugins=("${found_plugins[@]}" "${project_plugins[@]}")
 done
 

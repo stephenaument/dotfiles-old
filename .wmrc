@@ -1,7 +1,7 @@
 # ~/.wmrc
 # vim:set ft=sh sw=2 sts=2:
 
-[ -e "$WELLMATCH_DIR" ] || WELLMATCH_DIR="$HOME/wmdev"
+[ -e "$WELLMATCH_DIR" ] || WELLMATCH_DIR="$HOME/src"
 export WELLMATCH_DIR
 
 VIMRC_PATH="$(readlink ~/.vimrc)"
