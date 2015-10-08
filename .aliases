@@ -53,3 +53,12 @@ alias groutes='rake routes | grep $@'
 # JavaScript
 alias nom='rm -rf node_modules && npm cache clear && npm install'
 alias bom='rm -rf bower_components && bower cache clean && bower install'
+
+# Platform Services
+PLATFORM_PATH="$HOME/src/wellmatch_platform"
+alias platform="cd $PLATFORM_PATH"
+alias cuyahoga="cd $PLATFORM_PATH/components/cuyahoga"
+alias rhine="cd $PLATFORM_PATH/components/cuyahoga/rhine"
+alias nile="cd $PLATFORM_PATH/components/nile"
+alias riogrande="cd $PLATFORM_PATH/components/rio_grande"
+alias ganges="cd $PLATFORM_PATH/components/ganges"
