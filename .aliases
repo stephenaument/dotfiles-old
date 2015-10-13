@@ -62,3 +62,11 @@ alias rhine="cd $PLATFORM_PATH/components/cuyahoga/rhine"
 alias nile="cd $PLATFORM_PATH/components/nile"
 alias riogrande="cd $PLATFORM_PATH/components/rio_grande"
 alias ganges="cd $PLATFORM_PATH/components/ganges"
+
+# Other Services
+alias gateway="cd $HOME/src/wellmatch_api_gateway"
+alias accounts="cd $HOME/src/wellmatch_accounts"
+alias pricing="cd $HOME/src/wellmatch_pricing"
+alias providers="cd $HOME/src/wellmatch_provider_service"
+alias typeahead="cd $HOME/src/wellmatch_typeahead"
+alias ui="cd $HOME/src/wellmatch_ui"
