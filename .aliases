@@ -54,6 +54,9 @@ alias rc='bin/fig run worker bundle exec rails c'
 # JavaScript
 alias nom='rm -rf node_modules && npm cache clear && npm install'
 alias bom='rm -rf bower_components && bower cache clean && bower install'
+alias ember='bin/fig run rhine ember'
+alias et='ember test'
+alias ets='ember test --server'
 
 # Platform Services
 PLATFORM_PATH="$HOME/src/wellmatch_platform"
