@@ -11,6 +11,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias psg='ps aux | grep'
 alias h='history'
+alias vi='vim'
+alias e='vim'
 
 # Tmux
 alias tml='tmux ls'
@@ -37,14 +39,18 @@ alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias gra='git rebase --abort'
 alias reset-authors='git commit --amend --reset-author -C HEAD'
-alias vi='vim'
-alias e='vim'
-alias be='bundle exec'
+
+# Infrastructure
 alias ap='ansible-playbook'
 alias agx='ansible-galaxy'
 alias av='ansible-vault'
+alias dc='docker-compose'
+alias dcu='dc up'
+alias dcp='dc ps'
+alias dcg='dcp | grep'
 
-# Rails
+# Ruby/Rails
+alias be='bundle exec'
 alias sc='script_rails console'
 alias ss='script_rails server'
 alias sdbc='script_rails dbconsole -p'
@@ -58,19 +64,20 @@ alias ember='bin/fig run rhine ember'
 alias et='ember test'
 alias ets='ember test --server'
 
-# Platform Services
-PLATFORM_PATH="$HOME/src/wellmatch_platform"
+# Service Shortcuts
+SRC_PATH="$HOME/src"
+PLATFORM_PATH="$SRC_PATH/wellmatch_platform"
 alias platform="cd $PLATFORM_PATH"
 alias cuyahoga="cd $PLATFORM_PATH/components/cuyahoga"
 alias rhine="cd $PLATFORM_PATH/components/cuyahoga/rhine"
 alias nile="cd $PLATFORM_PATH/components/nile"
 alias riogrande="cd $PLATFORM_PATH/components/rio_grande"
 alias ganges="cd $PLATFORM_PATH/components/ganges"
+alias gateway="cd $SRC_PATH/wellmatch_api_gateway"
+alias accounts="cd $SRC_PATH/wellmatch_accounts"
+alias pricing="cd $SRC_PATH/wellmatch_pricing"
+alias providers="cd $SRC_PATH/wellmatch_provider_service"
+alias typeahead="cd $SRC_PATH/wellmatch_typeahead"
+alias ui="cd $SRC_PATH/wellmatch_ui"
 
-# Other Services
-alias gateway="cd $HOME/src/wellmatch_api_gateway"
-alias accounts="cd $HOME/src/wellmatch_accounts"
-alias pricing="cd $HOME/src/wellmatch_pricing"
-alias providers="cd $HOME/src/wellmatch_provider_service"
-alias typeahead="cd $HOME/src/wellmatch_typeahead"
-alias ui="cd $HOME/src/wellmatch_ui"
+# Other
