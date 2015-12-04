@@ -87,7 +87,7 @@ Project `.vimbundle`s are also consulted when installing/updating plugins -- as 
 ## Terminal configuration
 ---
 
-The `vim` setup contains both the `vim-airline` plugin and its configuration.  This gives you a nice status line in `vim` that looks like this: ![vim-airline](https://www.evernote.com/l/ABCKc3yib5dLdqtjUI8MPQOQkUSKwHK7bEA)
+The `vim` setup contains both the `vim-airline` plugin and its configuration.  This gives you a nice status line in `vim` that looks like this: ![vim-airline](https://goo.gl/rFJcb3)
 
 In order for this to work, your terminal emulator needs to use a font with the requisite symbols. A list of them can be found in the [powerline-fonts](https://github.com/powerline/fonts) repository.  Some recommended choices are [Hack][hack-font], [Meslo](https://github.com/powerline/fonts/raw/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf) or [Fira](https://github.com/powerline/fonts/raw/master/FiraMono/FuraMono-Regular%20Powerline.otf).  To use, download the font to your local machine, install it (on OSX, this means using Font Book), and configure your terminal emulator to use them.  Note that you may need to tweak the font settings (particularly the size) to get the chevrons to line up _juuuuuuust_ so.  
 
