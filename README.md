@@ -84,6 +84,17 @@ In addition, our Dotfiles support the ability to limit plugins for a given proje
 
 Project `.vimbundle`s are also consulted when installing/updating plugins -- as long as they are within the `$WELLMATCH_DIR`. This directory can, of course, be overridden on your local machine should you choose to organize things differently.
 
+## Terminal configuration
+---
+
+The `vim` setup contains both the `vim-airline` plugin and its configuration.  This gives you a nice status line in `vim` that looks like this: ![vim-airline](https://www.evernote.com/l/ABCKc3yib5dLdqtjUI8MPQOQkUSKwHK7bEA)
+
+In order for this to work, your terminal emulator needs to use a font with the requisite symbols. A list of them can be found in the [powerline-fonts](https://github.com/powerline/fonts) repository.  Some recommended choices are [Hack][hack-font], [Meslo](https://github.com/powerline/fonts/raw/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf) or [Fira](https://github.com/powerline/fonts/raw/master/FiraMono/FuraMono-Regular%20Powerline.otf).  To use, download the font to your local machine, install it (on OSX, this means using Font Book), and configure your terminal emulator to use them.  Note that you may need to tweak the font settings (particularly the size) to get the chevrons to line up _juuuuuuust_ so.  
+
+In case you're using iTerm2:  to configure, go to `Preferences` -> `Profiles` -> `Text`, and set both the `Regular Font` and `Non-ASCII Font` settings to the one you just installed.  You may have to tweak the font size, particularly for the `Non-ASCII Font` setting, to get the chevrons to line up.  Using the [Hack][hack-font] font, you will likely need to set `Non-ASCII Font` size to be 1pt smaller than the `Regular Font` size.
+
+  [hack-font]: https://github.com/powerline/fonts/raw/master/Hack/Hack-Regular.ttf "Hack Regular"
+
 Actively Maintained
 -------------------
 
