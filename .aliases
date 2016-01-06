@@ -77,7 +77,7 @@ alias gateway="cd $SRC_PATH/wellmatch_api_gateway"
 alias accounts="cd $SRC_PATH/wellmatch_accounts"
 alias pricing="cd $SRC_PATH/wellmatch_pricing"
 alias providers="cd $SRC_PATH/wellmatch_provider_service"
-alias typeahead="cd $SRC_PATH/wellmatch_typeahead"
+alias taxonomy="cd $SRC_PATH/wellmatch_taxonomy"
 alias ui="cd $SRC_PATH/wellmatch_ui"
 
 # Other
