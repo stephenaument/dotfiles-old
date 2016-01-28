@@ -82,3 +82,4 @@ alias taxonomy="cd $SRC_PATH/wellmatch_taxonomy"
 alias ui="cd $SRC_PATH/wellmatch_ui"
 
 # Other
+alias aliases="cat ~/dotfiles/.aliases"
