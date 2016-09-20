@@ -53,3 +53,5 @@ mustache/vim-mustache-handlebars
 elixir-lang/vim-elixir
 ekalinin/Dockerfile.vim
 mxw/vim-jsx
+xolox/vim-misc
+xolox/vim-session

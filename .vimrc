@@ -95,6 +95,13 @@ noremap <leader>bb :BufExplorer<CR>
 nnoremap <C-w>- :spl<cr>
 nnoremap <C-w><bar> :vsp<cr>
 
+" vim-session settings
+let g:session_autosave = 'yes'
+let g:session_autoload = 'no'
+
+" Don't save hidden and unloaded buffers in sessions
+set sessionoptions-=buffers
+
 " Rspec and Cucumber container compatibility
 let g:turbux_command_rspec="RAILS_ENV=test bin/fig run worker bundle exec rspec"
 let g:turbux_command_cucumber="RAILS_ENV=test bin/fig run worker bundle exec cucumber"
