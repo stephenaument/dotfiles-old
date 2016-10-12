@@ -53,6 +53,11 @@ set number
 
 " Save with leader + w
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>
+
+map <Leader>vv :vsp<cr><C-p>
+map <Leader> <esc>
 
 " format JSON with jq
 nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
