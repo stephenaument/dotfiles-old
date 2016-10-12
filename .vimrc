@@ -57,7 +57,7 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>
 
 map <Leader>vv :vsp<cr><C-p>
-map <Leader> <esc>
+imap jj <esc>
 
 " format JSON with jq
 nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
