@@ -127,18 +127,6 @@ if getcwd() != $HOME && getcwd() != $DOTFILES_DIR && getcwd() != expand("$HOME/s
   endif
 endif
 
-colorscheme Tomorrow-Night-Eighties
-
-if filereadable(expand('~/.vimrc.local'))
-  source ~/.vimrc.local
-endif
-
-if getcwd() != $HOME && getcwd() != $DOTFILES_DIR && getcwd() != expand("$HOME/src/dotfiles")
-  if filereadable(expand('.vimrc'))
-    source .vimrc
-  endif
-endif
-
 " vp doesn't replace paste buffer
 function! RestoreRegister()
   let @" = s:restore_reg
@@ -152,6 +140,16 @@ vmap <silent> <expr> p <sid>Repl()
 
 if exists('g:loaded_pathogen')
   execute pathogen#infect('~/.vimbundles/{}')
+endif
+
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
+
+if getcwd() != $HOME && getcwd() != $DOTFILES_DIR && getcwd() != expand("$HOME/src/dotfiles")
+  if filereadable(expand('.vimrc'))
+    source .vimrc
+  endif
 endif
 
 " toggle quickfix with <Leader> c
